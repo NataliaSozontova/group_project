@@ -55,9 +55,3 @@ HTML
 CSS
 JS
 Get Free API’s
-
-	
-
-                             
-	
-
