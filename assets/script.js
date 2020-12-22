@@ -38,6 +38,8 @@ function carousel() {
    $("#temperature").text(JSON.stringify(response.coord));
     });
 
+    
+
     //new code
     // window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
     // window.weatherWidgetConfig.push({
