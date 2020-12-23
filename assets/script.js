@@ -17,26 +17,26 @@
 
  // Performing an AJAX request with the queryURL
 
- var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Dubai%2Cuae&lat=0&lon=0&id=2172797&lang=null&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html";
+//  var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Dubai%2Cuae&lat=0&lon=0&id=2172797&lang=null&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html";
  
  
- $.ajax({
-    url: queryURL,
-    method: "GET",
-    headers: { 'x-rapidapi-key': '26902fcb435c84ffeff23ca59e4cae95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
-  })
+//  $.ajax({
+//     url: queryURL,
+//     method: "GET",
+//     headers: { 'x-rapidapi-key': '26902fcb435c84ffeff23ca59e4cae95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
+//   })
 
   
-    // After data comes back from the request
-    .then(function(response) {
-      console.log(queryURL);
+//     // After data comes back from the request
+//     .then(function(response) {
+//       console.log(queryURL);
 
-      console.log(response);
-      // storing the data from the AJAX request in the results variable
-    //   var results = response.data;
-   console.log("main" + response.coord);
-   $("#temperature").text(JSON.stringify(response.coord));
-    });
+//       console.log(response);
+//       // storing the data from the AJAX request in the results variable
+//     //   var results = response.data;
+//    console.log("main" + response.coord);
+//    $("#temperature").text(JSON.stringify(response.coord));
+//     });
 
     //new code
     // window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
@@ -59,4 +59,20 @@
     // })();
 
 
-    
+    $.getJSON(
+      // NB: using Open Exchange Rates here, but you can use any source!
+      'https://openexchangerates.org/api/latest.json?app_id=29fce18dda7b49a287bd5d6fb74a7e30',
+      function(data) {
+          // Check money.js has finished loading:
+          if ( typeof fx !== "undefined" && fx.rates ) {
+              fx.rates = data.rates;
+              fx.base = data.base;
+          } else {
+              // If not, apply to fxSetup global:
+              var fxSetup = {
+                  rates : data.rates,
+                  base : data.base
+              }
+          }
+      }
+  );
