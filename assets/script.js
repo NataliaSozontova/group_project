@@ -23,7 +23,7 @@
  $.ajax({
     url: queryURL,
     method: "GET",
-    headers: { 'x-rapidapi-key': 'f3b91ecaf5msh8a2cb171637c53ap1e6540jsn46fb9786ca95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
+    headers: { 'x-rapidapi-key': '26902fcb435c84ffeff23ca59e4cae95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
   })
 
   
