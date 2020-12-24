@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -167,3 +168,25 @@ input[type=submit]:hover {
     }
   }
   
+=======
+.btn {
+    border: none;
+    background-color:grey;
+    border-radius: 15px; 
+    color: white;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 40%;
+    padding: 14px 14px;
+    width: 15%;
+    /* text-align: center; */
+    float: right;  
+  }
+
+  #search-form {
+     text-align: center; 
+     padding-bottom: 10px;
+
+  }
+>>>>>>> 9983c9396779f5c3082ce7de92f5e4bea3ee2549
