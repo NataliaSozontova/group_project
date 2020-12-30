@@ -38,6 +38,7 @@ var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Duba
     });
 });
  
+
 // var myIndex = 0;
 // carousel();
 
@@ -77,7 +78,6 @@ var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Duba
 //    $("#temperature").text(JSON.stringify(response.coord));
 //     });
 
-<<<<<<< HEAD
     
 
     //new code
@@ -92,24 +92,7 @@ var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Duba
     //     showTitle:true, 
     //     showConditions:true
     // });
-=======
->>>>>>> 9983c9396779f5c3082ce7de92f5e4bea3ee2549
    
-
-
-
-
-
-
-
-
-
-
-
-  
-   
-
-    
     // (function() {
     // var d = document, s = d.createElement('script');
     // s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
@@ -117,6 +100,7 @@ var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Duba
     // (d.head || d.body).appendChild(s);
     // })();
 
+// Travel Exchange Code
 
     $.getJSON(
       // NB: using Open Exchange Rates here, but you can use any source!
