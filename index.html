@@ -5,14 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link  rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Home</title>
+
 </head>
 <body>
 
-    <div class="card">
-        <p id="temperature"></p>
-    </div>
+    <!-- Content will go here -->
+ 
+
+        <!-- Widget wrap style for Food Search -->
+
+        <div class="widget_wrap" style="width:320px;height:797px;display:inline-block;">
+            <iframe src="https://www.zomato.com/widgets/res_search_widget.php?entity_id=51&entity_type=city&city_id=51&theme=red&widgetType=small&sort=popularity" 
+            style="position:relative;width:100%;height:100%;" border="0" frameborder="0">
+            </iframe></div>
+
+            <!-- google map address -->
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIaXvbDRSihaNrgSPQZlWeXPlK51-L834&callback=initMap"
+            type="text/javascript"></script>
+
+        <!-- Slide Show -->
+
+        <section>
+                <img class="mySlides"
+                src="https://images.unsplash.com/photo-1589371315231-096e33e8c55e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZHViYWklMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                style="width:100%">
+                <img class="mySlides"
+                src="https://images.unsplash.com/photo-1549944850-84e00be4203b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1324&q=80"
+                style="width:100%">
+                <img class="mySlides"
+                src="https://images.unsplash.com/photo-1597076172527-c888de2a2605?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjZ8fGR1YmFpJTIwZm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                style="width:100%">
+                <img class="mySlides" 
+                src="https://images.unsplash.com/photo-1528702748617-c64d49f918af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+                style="width:100%">
+                <img class="mySlides"
+                src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80"
+                style="width:100%">
+                <img class="mySlides"
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80"
+                style="width:100%">
+                
+        </section>
+
+        
 
 
     <!-- Navigation -->
@@ -24,6 +64,7 @@
         <!-- <button class="btn" id="search">Search City</button> -->
     </nav>
 
+
 <!-- Slide Show -->
 
     <div class="slideShow">
@@ -31,6 +72,14 @@
             <img src="https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
             <div class="slideShow-item-text">
                 <h5>WELLCOME TO THE UAE</h5>
+
+       <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            
+
+            <a href="#"><i class="fa fa-twitter"></i></a>
 
                 <ul>
                     <li>
@@ -47,6 +96,7 @@
                     </li>
                     
                 </ul> 
+
 
                 <!-- <p>Discover the extravagant luxury, high-tech facilities and old world charm of Dubai. <br>This United Arab Emirates (UAE) state is located on the eastern coast of the Arabic Peninsular,<br> in the southwest corner of the Arabian Gulf. Renowned, worldwide,<br> as a booming centre of international trade and innovation,<br> Dubai has fast become one of the world’s most popular tourist destinations.<br> Only in Dubai can one gaze upon, and travel up, the world’s largest freestanding structure (the Burj Khalifa), <br>shop in both exclusive designer malls and traditional trade souks and indulge in feasts<br> inspired by the flavours of the world while staying in a 7-star hotel!</p> -->
             </div>
@@ -90,6 +140,10 @@
             </div>
         </div>
 
+
+
+            <a href="#"><i class="fa fa-instagram"></i></a>
+
         <div class="slideShow-item">
             <!-- <img src="https://image.freepik.com/free-photo/top-view-fast-food-mix-hamburger-doner-sandwich-chicken-nuggets-rice-vegetable-salad-chicken-sticks-caesar-salad-mushrooms-pizza-chicken-ragout-french-fries-mayo_141793-3997.jpg" alt=""> -->
             <img src="https://images.pexels.com/photos/635599/pexels-photo-635599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
@@ -114,6 +168,7 @@
             <div class="container-danny1">
                 <span> &copy; 2020 Travel Guide</span>
             </div>
+
         </footer>
     <!-- Footer -->
     <!-- <footer class="w3-container w3-padding-4 w3-center w3-black w3-xlarge">

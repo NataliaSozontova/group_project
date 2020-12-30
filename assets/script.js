@@ -77,6 +77,23 @@ var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Duba
 //    $("#temperature").text(JSON.stringify(response.coord));
 //     });
 
+<<<<<<< HEAD
+    
+
+    //new code
+    // window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+    // window.weatherWidgetConfig.push({
+    //     selector:".weatherWidget",
+    //     apiKey:"f3b91ecaf5msh8a2cb171637c53ap1e6540jsn46fb9786ca95", //Sign up for your personal key
+    //     location:"Dubai, AE", //Enter an address
+    //     unitGroup:"metric", //"us" or "metric"
+    //     forecastDays:5, //how many days forecast to show
+    //     title:"Dubai, AE", //optional title to show in the 
+    //     showTitle:true, 
+    //     showConditions:true
+    // });
+=======
+>>>>>>> 9983c9396779f5c3082ce7de92f5e4bea3ee2549
    
 
 
