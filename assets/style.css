@@ -1,4 +1,9 @@
 
+body {
+    font-family: sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1540921181925-b9726bc32384?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFpbHklMjBwbGFubmVyfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+
  /* Style the container/contact section */ 
  h1{ 
     font-family: 'Fondamento', cursive;
@@ -71,6 +76,4 @@ input[type=submit]:hover {
   #search-form {
      text-align: center; 
      padding-bottom: 10px;
-
   }
-
