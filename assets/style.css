@@ -172,3 +172,119 @@ margin-right: 180px;
        padding-right: 100px;
        margin-right: 150px;
          } */
+
+/* body {
+    font-family: sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1540921181925-b9726bc32384?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFpbHklMjBwbGFubmVyfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+}
+
+ /* Style the container/contact section */ 
+ h1 { 
+    font-family: 'Fondamento', cursive;
+    font-size: 35px; 
+    margin:15px;
+    padding: 5px 0px;
+ } */
+ 
+  /* input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+    
+ input[type=submit] {
+  background-color: #cfc4c4;
+  color: black;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}  */
+
+input[type=submit]:hover {
+  background-color: rgb(97, 92, 92);
+  color: black;
+}
+  .container {
+    padding: 90px;
+    margin: 90px 200px 90px 50px;
+    font-family: 'Fondamento', cursive;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* style destination page */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.search-city input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.search-city button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  Clear floats
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#forecast {
+    background-color: blue;
+}
+p {
+    color: white;
+   font-size: 12px;
+}
+
+h4 {
+    color: white;
+    font-size: 12px;
+}
+
+#search-card {
+  background-color: lightgrey;
+}
