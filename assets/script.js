@@ -1,81 +1,51 @@
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-var search = document.getElementById("search");
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-
-var city;
-$("#submit").on("click", function (event) {
-  event.preventDefault();
-  // Performing an AJAX request with the queryURL
- var city = search.value.trim();
- console.log(city);
-var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Dubai%2Cuae&lat=0&lon=0&id=2172797&lang=null&units=imperial&mode=xml%2C%20html";
- 
- $.ajax({
-    url: queryURL,
-    method: "GET",
-    headers: { 'x-rapidapi-key': 'f3b91ecaf5msh8a2cb171637c53ap1e6540jsn46fb9786ca95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
-  })
-    // After data comes back from the request
-    .then(function(response) {
-      console.log(queryURL);
-      console.log(response);
-   var temperature = $("#temperature").text("Temperature: " + JSON.stringify(response.main.temp));
-   console.log(temperature);
-   console.log(response.main.temp);
-    });
-});
- 
-// var myIndex = 0;
-// carousel();
-
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {myIndex = 1}
-//   x[myIndex-1].style.display = "block";
-//   setTimeout(carousel, 3000);
-// }
-
-
- // Performing an AJAX request with the queryURL
-
-//  var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Dubai%2Cuae&lat=0&lon=0&id=2172797&lang=null&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html";
- 
+// var city;
+// $("#submit").on("click", function (event) {
+//   event.preventDefault();
+//   // Performing an AJAX request with the queryURL
+//  var city = search.value.trim();
+//  console.log(city);
+// var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Dubai%2Cuae&lat=0&lon=0&id=2172797&lang=null&units=imperial&mode=xml%2C%20html";
  
 //  $.ajax({
 //     url: queryURL,
 //     method: "GET",
-//     headers: { 'x-rapidapi-key': '26902fcb435c84ffeff23ca59e4cae95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
+//     headers: { 'x-rapidapi-key': 'f3b91ecaf5msh8a2cb171637c53ap1e6540jsn46fb9786ca95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
 //   })
-
-  
 //     // After data comes back from the request
 //     .then(function(response) {
 //       console.log(queryURL);
-
 //       console.log(response);
-//       // storing the data from the AJAX request in the results variable
-//     //   var results = response.data;
-//    console.log("main" + response.coord);
-//    $("#temperature").text(JSON.stringify(response.coord));
+//    var temperature = $("#temperature").text("Temperature: " + JSON.stringify(response.main.temp));
+//    console.log(temperature);
+//    console.log(response.main.temp);
 //     });
+// });
+ 
+
+
+ // Performing an AJAX request with the queryURL
+
+ var queryURL = "https://community-open-weather-map.p.rapidapi.com/weather?q=Dubai%2Cuae&lat=0&lon=0&id=2172797&lang=null&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html";
+ 
+ 
+ $.ajax({
+    url: queryURL,
+    method: "GET",
+    headers: { 'x-rapidapi-key': '26902fcb435c84ffeff23ca59e4cae95', 'x-rapidapi-host':'community-open-weather-map.p.rapidapi.com' }
+  })
+
+  
+    // After data comes back from the request
+    .then(function(response) {
+      console.log(queryURL);
+
+      console.log(response);
+      // storing the data from the AJAX request in the results variable
+    //   var results = response.data;
+   console.log("main" + response.coord);
+   $("#temperature").text(JSON.stringify(response.coord));
+    });
 
    
 
