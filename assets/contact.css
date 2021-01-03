@@ -44,6 +44,35 @@ input[type=submit]:hover {
     display: table;
     clear: both;
   }
+
+  .section-search input{
+    padding: 5px !important;
+    font-size: 18px !important;
+    width: 50% !important;
+    border: #4D8BF5 3px solid !important;
+}
+  
+.footer {
+    padding-bottom: 5px;
+    font-size: 15px;
+    position: fixed;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+  }
+  h4{
+    font-size: 20px;
+    font-family: 'Fondamento', cursive;
+  }
+  p{
+    font-size: 20px;
+    font-family: 'Fondamento', cursive;
+  }
+  
   
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
