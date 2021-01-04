@@ -1,4 +1,4 @@
-/* style famous page */
+/* style famous page and gallery */
 .container5{
   margin-left:200px;
   margin-top:60px ;   
@@ -37,10 +37,7 @@
   clear: both;
 }
 
-#name{
-  font-family: 'Fondamento', cursive; 
-  font-size: 25px;
-}
+
 /* style home page */
 *{
   margin: 0;
@@ -63,7 +60,8 @@ body{
 li{
   padding-bottom: 20px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: 'Fondamento', cursive;
 }
 
 /* slideshow style */
@@ -115,12 +113,13 @@ li{
   padding: 10rem 5rem;
 }
 .slideShow-item-text h5{
-  font-size: 5rem;
+  font-size: 3rem;
   font-family:'Raleway', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 2.5rem;
   color: tomato;
+  font-family: 'Fondamento', cursive;
 }
 .slideShow-item-text p{
   font-size: 1.6rem;
@@ -164,7 +163,7 @@ li{
    font-size: 3rem;
  }
  .slideShow-item-text p{
-   font-size: 1.4rem;
+   font-size: 1rem;
  }
 }
 /* footer style */
