@@ -1,43 +1,75 @@
-
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+/* style famous page and gallery */
+.container5{
+  margin-left:200px;
+  margin-top:60px ;   
 }
-/* html style */
+#card{
+  color:black;
+  font-family: 'Fondamento', cursive; 
+  margin-bottom: 20px;
+  margin-right: 30px;
+  
+}
+#card-title{
+   font-family: 'Fondamento', cursive; 
+   font-size: 23px;
+   
+}
+#header{
+  font-family: 'Fondamento', cursive; 
+  font-size: 35px;
+}
+
+.container {
+  margin-left:350px;
+  margin-top:60px ; 
+  font-family: 'Fondamento', cursive; 
+}
+.column {
+  float: center;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* style home page */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html{
-   font-size: 10px;
+  font-size: 10px;
 }
 /* body style */
 body{
-   background-color: #000;
-   
-}
-label.logo{
-  color: orangered;
-  font-size: 16px;
-  line-height: 50px;
-  padding: 0 50px;
-  /* font-weight: bold; */
-  float: left;
-  font-family: cursive;
+  background-color: #000;
 }
 
-/* li style */
+#temperature{
+  color: black;
+  background-color: white;
+  padding-top: 20px;
+}
 li{
-   padding-bottom: 20px;
-   font-weight: bold;
-   font-size: 18px;
-   
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Fondamento', cursive;
 }
 
 /* slideshow style */
 .slideShow{
-   width: 100%;
-   height: 90vh;
-   position: relative;
-   overflow: hidden;
-
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 /* slide show item style */
 .slideShow-item{
@@ -47,17 +79,13 @@ li{
    opacity: 0;
    animation: cycleImages 41s infinite;
 }
-
-
 /* slide show image style */
 .slideShow-item img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   animation: zoom 41s infinite;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom 41s infinite;
 }
-/* animation delay for the first image and text */
 .slideShow-item:nth-child(1),
 .slideShow-item:nth-child(1) img{
    animation-delay: 0s;
@@ -88,23 +116,21 @@ li{
    color: white;
    padding: 10rem 5rem;
 }
-/* style for h5 tag */
 .slideShow-item-text h5{
-   font-size: 5rem;
-   font-family:'Raleway', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   margin-bottom: 2.5rem;
-   color: tomato;
+  font-size: 3rem;
+  font-family:'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2.5rem;
+  color: tomato;
+  font-family: 'Fondamento', cursive;
 }
-/* style for paragraph tag */
 .slideShow-item-text p{
    font-size: 1.6rem;
    font-family:'Roboto', sans-serif;
    letter-spacing: 1px;
    font-weight: 300;
 }
-/* cycle image style */
 @keyframes cycleImages{
    25%{
        opacity: 1;
@@ -148,17 +174,55 @@ li{
     font-size: 1.4rem;
   }
 }
+/* for device at 1000 px screen size */
+@media screen and (max-width: 1000px){
+    .slideShow-item-text{
+        max-width: 70%;
+        padding: 5rem 1rem;
+    }
+    .slideShow-item-text h5{
+      font-size: 4rem;
+    }
+}
+/* for device at 767 px screen size */
+@media screen and (max-width: 767px){
+ .slideShow-item-text{
+     max-width: 100%;
+     padding: 2rem;
+     top: initial;
+     bottom: 0;
+     transform: initial;
+ }
+ .slideShow-item-text h5{
+   font-size: 3rem;
+ }
+ .slideShow-item-text p{
+   font-size: 1rem;
+ }
+}
 /* footer style */
 footer {
-  padding-bottom: 5px;
-  font-size: 20px;
-  position: fixed;
-  left: 0px;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color:white;
-  text-align: center;
-  
+ padding-bottom: 5px;
+ font-size: 20px;
+ position: fixed;
+ left: 0px;
+ bottom: 0;
+ width: 100%;
+ background-color: black;
+ color:white;
+ text-align: center;
+ font-family: 'Fondamento', cursive;
 }
- 
+@media screen and (max-width: 1000px){
+    .slideShow-item-text{
+        max-width: 70%;
+        padding: 5rem 1rem;
+    } 
+}
+.card-content{
+  color:white;
+}
+.card-image{
+  align-items: center;
+  /* padding:80px; */
+}

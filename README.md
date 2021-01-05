@@ -26,9 +26,3 @@ This Application can be used in any browser available. The purpose of this appli
 ![_C__Users_User_Desktop_group_project_index html (1)](https://user-images.githubusercontent.com/59859358/103448243-aabebe80-4c64-11eb-87db-1fd0659c578e.png)
 
 ![_C__Users_User_Desktop_group_project_destination html](https://user-images.githubusercontent.com/59859358/103448294-8d3e2480-4c65-11eb-8bad-a5d8a58f2e20.png)
-
-
- 
-
-
-
