@@ -227,6 +227,8 @@ function checkHistory(city) {
           }
       }
   );
+
+ 
   // echange code ends
 
 
