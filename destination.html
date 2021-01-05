@@ -6,35 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
 
-    <!-- Content will go here -->
-    <!-- <div class="weatherWidget"></div>
-    <div class="verticalweatherForecast" data-key="f3b91ecaf5msh8a2cb171637c53ap1e6540jsn46fb9786ca95"
-        data-location="Dubai, AE" data-unitGroup="metric"> -->
-
-
-
     <!-- Navigation start-->
     <nav class="w3-bar w3-black">
-        <a href="./home.html" class="w3-button w3-bar-item nav-link">Home</a>
-        <a href="./destination.html" class="w3-button w3-bar-item active">Destination</a>
-        <a href="./contact.html" class="w3-button w3-bar-item">Contact</a>
-        <!-- <button class="btn" id="search">Search City</button> -->
+        <a href="./index.html" class="w3-button w3-bar-item nav-link">Home</a>
+        <a href="./famousPlaces.html" class="w3-button w3-bar-item">Famous Places</a>
+        <a href="./destination.html" class="w3-button w3-bar-item">Destination</a>
+        <a href="./gallery.html" class="w3-button w3-bar-item">Gallery</a>
+        <a href="./contact.html" class="w3-button w3-bar-item active">Contact</a>
     </nav>
     <!-- Navigation ends-->
-    <!-- Destination Page start -->
-    <div class="card">
-        <p id="temperature"></p>
+
+    <!--Weather feature starts -->
+    <div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="search-card" class="card">
+                    <div class="card-body">
+                        <h3>Search for a City:</h3>
+                        <form class="search-city">
+                            <input type="text" id="search">
+                            <button id="submit" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+
+                        <br>
+                        <br>
+                        <br>
+                        <div class="card">
+                            <ul id="history" class="list-group list-group-flush">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="weather" style="display: none;">
+            
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 id="currentDay"></h2>
+                        <img id="icon" src="" alt="img">
+                        <h5 id="temp">Temperature:</h5>
+                        <h5 id="humid">Humidity:</h5>
+                        <h5 id="wind">Wind Speed:</h5>
+                        <h5 >UV Index: <span id="uv"></span></h5>
+                    </div>
+                </div>
+                <br>
+            </div>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h2>5-Day Forecast:</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div id="forecast" class="card">
+                            <div class="card-body">
+                                <h4 id="day1">date</h4>
+                                <img id="icon1" src="" alt="img">
+                                <p id="temp1">Temp:</p>
+                                <p id="humid1">Humidity:<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div id="forecast" class="card">
+                            <div class="card-body">
+                                <h4 id="day2">date</h4>
+                                <img id="icon2" src="" alt="img">
+                                <p id="temp2">Temp:</p>
+                                <p id="humid2">Humidity:<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div id="forecast" class="card">
+                            <div class="card-body">
+                                <h4 id="day3">date</h4>
+                                <img id="icon3" src="" alt="img">
+                                <p id="temp3">Temp:</p>
+                                <p id="humid3">Humidity:<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div id="forecast" class="card">
+                            <div class="card-body">
+                                <h4 id="day4">date</h4>
+                                <img id="icon4" src="" alt="img">
+                                <p id="temp4">Temp:</p>
+                                <p id="humid4">Humidity:<p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div id="forecast" class="card">
+                            <div class="card-body">
+                                <h4 id="day5"></h4>
+                                <img id="icon5" src="" alt="img">
+                                <p id="temp5">Temp:</p>
+                                <p id="humid5">Humidity:<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <hr>
+ 
     </div>
-    <!-- Destination Page ends -->
+    <!-- weather feature ends -->
+
+
+    <!-- Food Search -->
+    <!-- <section id="search" class="section section-search aero blue darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Find Restaurants in Dubai</h3>                                                       
+                    </div>                                 
+                </div>
+            </div>
+        <div class="widget_wrap" style="width:250px;height:500px;display:inline-block;">
+
+            <iframe src="https://www.zomato.com/widgets/res_search_widget.php?entity_id=51&entity_type=city&city_id=51&language_id=1&theme=red&widgetType=small&sort=popularity" 
+            style="position:relative;width:100%;height:100%;" border="0" frameborder="0"></iframe></div>        
+    </section> -->
+    <!-- Food search ends -->
+
+    <!-- Google Maps-Need to Add the Code for Google Maps -->
+
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb-8WCcS-JO8RNNW3te7QIydppJ4M_4lo&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 200px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of dubai
+        const dubai = { lat: 25.276987, lng: 55.296249 };
+        // The map, centered at dubai
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: dubai,
+        });
+        // The marker, positioned at dubai
+        const marker = new google.maps.Marker({
+          position: dubai,
+          map: map,
+        });
+      }
+    </script>
+    <body>
+        The div element for the map -->
+        <!-- <div id="map"></div>
+      </body> -->
 
     <!-- Slide Show -->
-
     <section>
         <img class="mySlides"
             src="https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -46,17 +198,16 @@
             style="width:100%">
     </section>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-
-        <a href="#"><i class="fa fa-facebook-official"></i></a>
-
-        <a href="#"><i class="fa fa-twitter"></i></a>
-
-    </footer>
+   <!-- Footer -->
+   <footer class="w3-container w3-padding-4 w3-center w3-black w3-xlarge">
+    <a href="https://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+</footer>
 
     <!-- javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/script.js"></script>
     
     
