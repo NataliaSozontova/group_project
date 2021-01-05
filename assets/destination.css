@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
   }
-
+/* logo style */
   label.logo{
     color: orangered;
     font-size: 16px;
@@ -9,7 +9,7 @@
     padding: 0 50px;
     /* font-weight: bold; */
     float: left;
-    font-family: cursive;
+    font-family: 'Fondamento', cursive; 
   }
   /* Style the search field */
   form.search-city input[type=text] {

@@ -1,4 +1,14 @@
 /* Style the container/contact section */ 
+label.logo{
+  color: orangered;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 50px;
+  /* font-weight: bold; */
+  float: left;
+  font-family: 'Fondamento', cursive; 
+}
+
 h1 { 
     font-family: 'Fondamento', cursive;
     font-size: 35px; 
