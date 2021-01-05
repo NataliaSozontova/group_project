@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
   }
- /* logo style */
+/* logo style */
   label.logo{
     color: orangered;
     font-size: 16px;
@@ -18,9 +18,8 @@
     border: 1px solid grey;
     float: left;
     width: 80%;
-    background: #f1f1f1;
+    background: #F1F1F1;
   }
-  
   /* Style the submit button */
   form.search-city button {
     float: left;
@@ -33,18 +32,15 @@
     border-left: none; /* Prevent double borders */
     cursor: pointer;
   }
-  
   form.example button:hover {
-    background: #0b7dda;
+    background: #0B7DDA;
   }
-  
   Clear floats
   form.example::after {
     content: "";
     clear: both;
     display: table;
   }
-
 #forecast {
     background-color: blue;
 }
@@ -52,15 +48,16 @@ p {
    color: white;
    /* font-size: 12px; */
 }
-
 h4 {
     color: white;
     font-size: 12px;
 }
-
 #search-card {
   background-color: lightgrey;
 }
+
+/* footer style */
+
 footer {
     padding-bottom: 5px;
     font-size: 20px;
@@ -71,5 +68,6 @@ footer {
     background-color: black;
     color:white;
     text-align: center;
-    font-family: 'Fondamento', cursive;
-   }
+    
+  }
+  
