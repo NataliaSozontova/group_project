@@ -64,15 +64,11 @@ body{
   background-color: #000;
 }
 
-#temperature{
-  color: black;
-  background-color: white;
-  padding-top: 20px;
-}
+
 li{
   padding-bottom: 20px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Fondamento', cursive;
 }
 
@@ -159,33 +155,7 @@ li{
 }
 
 
-/* for device at 1000 px screen size */
- @media screen and (max-width: 1000px){
-     .slideShow-item-text{
-         max-width: 70%;
-         padding: 5rem 1rem;
-     }
-     .slideShow-item-text h5{
-       font-size: 4rem;
-     }
- }
 
-/* for device at 767 px screen size */
- @media screen and (max-width: 767px){
-  .slideShow-item-text{
-      max-width: 100%;
-      padding: 2rem;
-      top: initial;
-      bottom: 0;
-      transform: initial;
-  }
-  .slideShow-item-text h5{
-    font-size: 3rem;
-  }
-  .slideShow-item-text p{
-    font-size: 1.4rem;
-  }
-}
 /* for device at 1000 px screen size */
 @media screen and (max-width: 1000px){
     .slideShow-item-text{
@@ -225,12 +195,7 @@ footer {
  text-align: center;
  font-family: 'Fondamento', cursive;
 }
-@media screen and (max-width: 1000px){
-    .slideShow-item-text{
-        max-width: 70%;
-        padding: 5rem 1rem;
-    } 
-}
+
 .card-content{
   color:white;
 }

@@ -73,3 +73,11 @@ footer {
     text-align: center;
     font-family: 'Fondamento', cursive;
    }
+
+#map {
+  height: 200px;
+  width: 100%;
+  
+}
+
+  

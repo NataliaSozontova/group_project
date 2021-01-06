@@ -132,40 +132,35 @@
         <hr>
  
     </div>
-    <!-- weather feature ends -->
+  
 
-
-    <!-- Food Search -->
-    <!-- <section id="search" class="section section-search aero blue darken-1 white-text center scrollspy">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h3>Find Restaurants in Dubai</h3>                                                       
-                    </div>                                 
+   <!-- Food Search -->
+   <section id="search" class="section section-search aero blue darken-1 white-text center scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col sm6">
+                <h3>Find Restaurants in Dubai</h3>
                 </div>
             </div>
-        <div class="widget_wrap" style="width:250px;height:500px;display:inline-block;">
-
-            <iframe src="https://www.zomato.com/widgets/res_search_widget.php?entity_id=51&entity_type=city&city_id=51&language_id=1&theme=red&widgetType=small&sort=popularity" 
-            style="position:relative;width:100%;height:100%;" border="0" frameborder="0"></iframe></div>        
-    </section> -->
-    <!-- Food search ends -->
+            <div class="col sm6">
+                <div class="aside">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    <div class="widget_wrap" style="width:250px;height:500px;display:inline-block;">
+        <iframe src="https://www.zomato.com/widgets/res_search_widget.php?entity_id=51&entity_type=city&city_id=51&language_id=1&theme=red&widgetType=small&sort=popularity"
+        style="position:relative;width:100%;height:100%;"border="0" frameborder="0"></iframe></div>
+    </section>
+    
+        
 
     <!-- Google Maps-Need to Add the Code for Google Maps -->
-
-    <!-- <script
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb-8WCcS-JO8RNNW3te7QIydppJ4M_4lo&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-    <style type="text/css">
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 200px;
-        /* The height is 400 pixels */
-        width: 100%;
-        /* The width is the width of the web page */
-      }
-    </style>
+    
     <script>
       // Initialize and add the map
       function initMap() {
@@ -173,7 +168,7 @@
         const dubai = { lat: 25.276987, lng: 55.296249 };
         // The map, centered at dubai
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
+          zoom: 5,
           center: dubai,
         });
         // The marker, positioned at dubai
@@ -184,23 +179,11 @@
       }
     </script>
     <body>
-        The div element for the map -->
-        <!-- <div id="map"></div>
-      </body> -->
-
-    <!-- Slide Show -->
-    <section>
-        <img class="mySlides"
-            src="https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-            style="width:100%">
-        <img class="mySlides" src="https://image.freepik.com/free-photo/image-with-camels_199223-798.jpg"
-            style="width:100%">
-        <img class="mySlides"
-            src="https://image.freepik.com/free-photo/top-view-fast-food-mix-hamburger-doner-sandwich-chicken-nuggets-rice-vegetable-salad-chicken-sticks-caesar-salad-mushrooms-pizza-chicken-ragout-french-fries-mayo_141793-3997.jpg"
-            style="width:100%">
-    </section>
-
-   <!-- Footer -->
+        <!--The div element for the map -->
+        
+       
+      </body>
+    <!-- Footer -->
    <footer class="w3-container w3-padding-4 w3-center w3-black w3-xlarge">
     <a href="https://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
     <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
