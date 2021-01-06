@@ -1,19 +1,4 @@
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-var search = document.getElementById("search");
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
 
 // weather code starts
 var date = $("#currentDay");
@@ -276,3 +261,18 @@ function checkHistory(city) {
     // (d.head || d.body).appendChild(s);
     // })();
 
+ // Initialize and add the map
+ function initMap() {
+    // The location of dubai
+    const dubai = { lat: 25.276987, lng: 55.296249 };
+    // The map, centered at dubai
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 7,
+      center: dubai,
+    });
+    // The marker, positioned at dubai
+    const marker = new google.maps.Marker({
+      position: dubai,
+      map: map,
+    });
+  }

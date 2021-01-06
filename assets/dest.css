@@ -1,7 +1,16 @@
 *{
     box-sizing: border-box;
   }
- 
+ /* logo style */
+  label.logo{
+    color: orangered;
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 50px;
+    /* font-weight: bold; */
+    float: left;
+    font-family: 'Fondamento', cursive; 
+  }
   /* Style the search field */
   form.search-city input[type=text] {
     padding: 10px;
@@ -37,7 +46,7 @@
   }
 
 #forecast {
-    background-color: blue;
+    background-color: rgb(64, 104, 51);
 }
 p {
    color: white;
@@ -46,9 +55,13 @@ p {
 
 h4 {
     color: white;
-    font-size: 12px;
-}
+    font-size: 20px;
+    font-family: 'Fondamento', cursive;
+  }
 
+h2 {
+    font-family: 'Fondamento', cursive;
+}
 #search-card {
   background-color: lightgrey;
 }
@@ -64,3 +77,27 @@ footer {
     text-align: center;
     font-family: 'Fondamento', cursive;
    }
+   #map {
+    height: 400px;
+   
+    width: 100%;
+   }
+   h3{
+       font-size:25px ;
+       font-family: 'Fondamento', cursive;
+       color: black;
+       
+   }
+   #footer{
+    padding-bottom: 5px;
+    font-size: 20px;
+    position: fixed;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+   }
+  
