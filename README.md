@@ -22,10 +22,14 @@ This Application can be used in any browser available. The purpose of this appli
 
 ## LINK TO THE REPOSITORY
 
--The link is [Travel Guide](https://github.com/NataliaSozontova/group_project)
+- The link is [Travel Guide](https://github.com/NataliaSozontova/group_project)
+
+## LINK TO THE WEBSITE
+- The link is [Travel Guide](https://nataliasozontova.github.io/group_project/)
 
 ## SCREENSHOTS
 ![groupProject index.html screen shot](image1.png)
+
 ![groupProject famousPlaces.html screen shot](image2.png)
 
 ![groupProject destination.html screen shot](image3.png)
