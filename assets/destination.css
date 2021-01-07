@@ -75,39 +75,7 @@ footer {
   font-family: 'Fondamento', cursive;
  }
 
- /* for device at 1000 px screen size */
- /* @media screen and (max-width: 1000px){
-  .card{
-      max-width: 100%;
-      align-items: center;
-      
-  }
-  .card-image{
-    max-width: 100%;
-    align-items: center;
-  }
-  #card-title{
-    max-width: 100%;
-    align-items: center;
-  } 
-} */
 
-/* for device at 767 px screen size */
-/* @media screen and (max-width: 767px){
-  .card{
-      max-width: 100%;
-      align-items: left;
-      
-  }
-  .card-image{
-    max-width: 100%;
-    align-items: left;
-  }
-  #card-title{
-    max-width: 100%;
-    align-items: center;
-  } 
-} */
 
 @media screen and (orientation: portrait) {
   .card-imag { max-width: 90%; }
