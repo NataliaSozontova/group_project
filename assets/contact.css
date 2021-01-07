@@ -1,4 +1,10 @@
 /* Style the container/contact section */ 
+body{
+    overflow-y: hidden;
+  }
+  .w3-bar{
+    position: fixed;
+  }
 label.logo{
   color: orangered;
   font-size: 16px;
@@ -39,8 +45,8 @@ input[type=submit]:hover {
   color: black;
 }
   .container4 {
-    padding: 90px;
-    margin: 90px 200px 90px 50px;
+    padding: 35px;
+    margin: 20px 200px 20px 50px;
     font-family: 'Fondamento', cursive;
   }
   .column1 {
@@ -62,9 +68,9 @@ input[type=submit]:hover {
     border: #4D8BF5 3px solid !important;
 }
   
-.footer {
+footer {
     padding-bottom: 5px;
-    font-size: 15px;
+    font-size: 20px;
     position: fixed;
     left: 0px;
     bottom: 0;
@@ -73,15 +79,15 @@ input[type=submit]:hover {
     color:white;
     text-align: center;
     font-family: 'Fondamento', cursive;
-  }
+   }
   h4{
     font-size: 20px;
     font-family: 'Fondamento', cursive;
   }
-  p{
+  /* p{
     font-size: 20px;
     font-family: 'Fondamento', cursive;
-  }
+  } */
   
   
   @media screen and (max-width: 600px) {
@@ -90,6 +96,11 @@ input[type=submit]:hover {
       margin-top: 0;
     }
   }
-
+  body{
+    overflow: hidden;
+  }
+  .w3-bar{
+    position: fixed;
+  }
  
   
