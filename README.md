@@ -1,5 +1,5 @@
 # Travel Guide
-This Application can be used in any browser available. The purpose of this application is to provide tourists help in guidance finding deliciouse foods and restourants, find any places using a google map, exchange currency and current and 5 days  weather foreacst.
+This Application can be used in any browser available. The purpose of this application is to provide tourists help in guidance finding deliciouse foods, location of restourants,current weather and 5 days  weather foreacst.
 
 ### HOW TO USE THE APPLICATION
 
@@ -8,6 +8,7 @@ This Application can be used in any browser available. The purpose of this appli
 - To contact for help click on the navigation button that says contact.
 - To look for famouse place click on the famouse place navigation button.
 - To look for gallry of different places in dubai click on the gallery navigation button.
+- To check the current weather of the city and 5 day forecast weather just enter the city name you are looking for and hit search button.
 ### Technologies Used
 
 - HTML
@@ -15,6 +16,8 @@ This Application can be used in any browser available. The purpose of this appli
 - MOMENT JS
 - JAVASCRIPT
 - J QUERY
+- API
+
 
 ## LINK TO THE REPOSITORY
 -The link is [Travel Guide](https://github.com/NataliaSozontova/group_project)

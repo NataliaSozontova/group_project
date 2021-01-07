@@ -9,6 +9,12 @@ label.logo{
   font-family: 'Fondamento', cursive; 
 }
 
+body{
+  overflow: hidden;
+}
+.w3-bar{
+  position: fixed;
+}
 h1 { 
     font-family: 'Fondamento', cursive;
     font-size: 35px; 

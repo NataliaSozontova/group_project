@@ -11,6 +11,13 @@
     float: left;
     font-family: 'Fondamento', cursive; 
   }
+
+  body{
+    overflow: hidden;
+  }
+  .w3-bar{
+    position: fixed;
+  }
   /* Style the search field */
   form.search-city input[type=text] {
     padding: 10px;
