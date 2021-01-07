@@ -212,6 +212,8 @@ function checkHistory(city) {
           }
       }
   );
+
+ 
   // echange code ends
 
 
@@ -259,3 +261,18 @@ function checkHistory(city) {
     // (d.head || d.body).appendChild(s);
     // })();
 
+ // Initialize and add the map
+ function initMap() {
+    // The location of dubai
+    const dubai = { lat: 25.276987, lng: 55.296249 };
+    // The map, centered at dubai
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 7,
+      center: dubai,
+    });
+    // The marker, positioned at dubai
+    const marker = new google.maps.Marker({
+      position: dubai,
+      map: map,
+    });
+  }

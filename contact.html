@@ -40,7 +40,7 @@
         <div class="row">
           <aside>
           <div class="column1">
-            <form action="./thankyou.html">
+           
              
               <input type="text" id="name" name="name" placeholder=" Name..">
               
@@ -49,8 +49,8 @@
               <input type="text" id="subject" name="subject" placeholder="Subject..">
 
               <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" value="Submit">
-            </form>
+              <input  id ="submitBtn" type="submit" value="Submit">
+            
           </div>
           </aside>
         </div>
@@ -70,8 +70,13 @@
     </div> 
   </div>
     <!-- javascript -->
+    <script type="text/javascript">
+     document.getElementById("submitBtn").onclick = function (){
+    location.href = "thankyou.html";
+};
+  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/script.js"></script>
-</body>
+    
+</body> 
 </html>
 
